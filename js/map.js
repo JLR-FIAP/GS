@@ -6,7 +6,7 @@ const mapData = {
             location: [-23.5505, -46.6333],  // São Paulo
             severity: "high",
             description: "Enchente na região central",
-            reportedAt: "2023-05-15T10:30:00",
+            reportedAt: "2025-05-15T10:30:00",
             radius: 2000  
         },
         {
@@ -15,7 +15,7 @@ const mapData = {
             location: [-22.9068, -43.1729],  // Rio de Janeiro
             severity: "medium",
             description: "Incêndio na zona norte",
-            reportedAt: "2023-05-16T14:45:00",
+            reportedAt: "2025-04-16T14:45:00",
             radius: 1500
         },
         {
@@ -24,7 +24,7 @@ const mapData = {
             location: [-12.9714, -38.5014],  // Salvador
             severity: "high",
             description: "Tempestade com ventos fortes",
-            reportedAt: "2023-05-17T08:15:00",
+            reportedAt: "2024-02-17T08:15:00",
             radius: 3000
         },
         {
@@ -33,7 +33,7 @@ const mapData = {
             location: [-15.7939, -47.8828],  // Brasília
             severity: "low",
             description: "Pequeno tremor de terra",
-            reportedAt: "2023-05-18T03:20:00",
+            reportedAt: "2023-11-18T03:20:00",
             radius: 500
         }
     ],
