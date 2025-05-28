@@ -1,11 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>!</title>
+    <title>Vizinhança Alerta</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="/js/script.js" defer></script>
+    <script src="/js/telegram.js" defer></script>
 </head>
 <body>
-    
+<div class="chatbot-widget">
+    <div class="chatbot-avatar">
+        <img src="/images/avatar.png" alt="Avatar do ChatBot" id="chatbotTrigger">
+    </div>
+    <div class="chatbot-popup" id="chatbotPopup">
+        <div class="popup-header">
+            <h3>Precisa de ajuda?</h3>
+            <button class="close-popup">&times;</button>
+        </div>
+        <div class="popup-body">
+            <p>Entre em contato com nosso suporte!</p>
+            <div class="contact-options">
+                <a href="https://t.me/seu_suporte" class="telegram-btn" target="_blank">
+                    <i class="fab fa-telegram"></i> Chat no Telegram
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+    <header>
+        <div class="logo">
+            <i class="fas fa-shield-alt"></i>
+            <h1>Vizinhança Alerta</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Início</a></li>
+                <li><a href="/src/map.html"><i class="fas fa-map-marked-alt"></i> Mapa</a></li>
+                <li><a href="/src/alertas.html"><i class="fas fa-bell"></i> Alertas</a></li>
+                <li><a href="/src/recursos.html"><i class="fas fa-info-circle"></i>Recursos</a></li>
+                <li><a href="/src/faq.html"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                <li><a href="/src/contato.html"><i class="fas fa-envelope"></i> Contato</a></li>
+                <li><a href="/src/integrantes.html"><i class="fas fa-users"></i> Integrantes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Sistema Comunitário de Alerta de Desastres</h2>
+                <p>Receba alertas em tempo real e saiba como agir em situações de emergência</p>
+                <button id="emergencyBtn">Botão de Emergência</button>
+            </div>
+        </section>
+
+        <section class="dashboard">
+            <div class="card">
+                <i class="fas fa-exclamation-triangle"></i>
+                <h3>Alertas Ativos</h3>
+                <p id="activeAlerts">0</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-users"></i>
+                <h3>Pessoas em Risco</h3>
+                <p id="peopleAtRisk">0</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Áreas Afetadas</h3>
+                <p id="affectedAreas">0</p>
+            </div>
+        </section>
+
+        <section class="quick-actions">
+            <h3>Ações Rápidas</h3>
+            <div class="actions-grid">
+                <button onclick="showProcedure('flood')"><i class="fas fa-water"></i> Enchente</button>
+                <button onclick="showProcedure('fire')"><i class="fas fa-fire"></i> Incêndio</button>
+                <button onclick="showProcedure('earthquake')"><i class="fas fa-mountain"></i> Terremoto</button>
+                <button onclick="showProcedure('storm')"><i class="fas fa-wind"></i> Tempestade</button>
+                <button onclick="showNearestShelters()"><i class="fas fa-home"></i> Abrigos</button>
+                <button onclick="reportEmergency()"><i class="fas fa-plus-circle"></i> Reportar</button>
+            </div>
+        </section>
+    </main>
+
+    <div id="emergencyModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle">Procedimento de Emergência</h2>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Viziinhança Alerta - Sistema de Proteção Comunitária</p>
+        <div class="footer-links">
+            <a href="/src/faq.html"><i class="fas fa-question-circle"></i> FAQ</a>
+            <a href="/src/contato.html"><i class="fas fa-phone-alt"></i> Contato</a>
+            <a href="#"><i class="fas fa-share-alt"></i> Compartilhe</a>
+        </div>
+    </footer>
 </body>
 </html>
