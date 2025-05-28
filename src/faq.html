@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/faq.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="/js/faq.js" defer></script>
+        <script src="/js/telegram.js" defer></script>
+</head>
+<body>
+<div class="chatbot-widget">
+    <div class="chatbot-avatar">
+        <img src="/images/avatar.png" alt="Avatar do ChatBot" id="chatbotTrigger">
+    </div>
+    <div class="chatbot-popup" id="chatbotPopup">
+        <div class="popup-header">
+            <h3>Precisa de ajuda?</h3>
+            <button class="close-popup">&times;</button>
+        </div>
+        <div class="popup-body">
+            <p>Entre em contato com nosso suporte!</p>
+            <div class="contact-options">
+                <a href="https://t.me/seu_suporte" class="telegram-btn" target="_blank">
+                    <i class="fab fa-telegram"></i> Chat no Telegram
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+    <header>
+        <div class="logo">
+            <i class="fas fa-shield-alt"></i>
+            <h1>Vizinhança Alerta</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/index.html"><i class="fas fa-home"></i> Início</a></li>
+                <li><a href="/src/map.html"><i class="fas fa-map-marked-alt"></i> Mapa</a></li>
+                <li><a href="/src/alertas.html"><i class="fas fa-bell"></i> Alertas</a></li>
+                <li><a href="/src/recursos.html"><i class="fas fa-info-circle"></i>Recursos</a></li>
+                <li><a href="faq.html"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                <li><a href="/src/contato.html"><i class="fas fa-envelope"></i> Contato</a></li>
+                <li><a href="/src/integrantes.html"><i class="fas fa-users"></i> Integrantes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="faq-hero">
+            <div class="hero-content">
+                <h2>Perguntas Frequentes</h2>
+                <p>Encontre respostas para as dúvidas mais comuns sobre o sistema</p>
+            </div>
+        </section>
+
+        <section class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Como funciona o sistema de alertas?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>O sistema de alertas do AlertaDesastre utiliza dados em tempo real de fontes oficiais, sensores IoT e relatos comunitários para identificar situações de risco. Quando um desastre é detectado ou previsto, alertas são enviados automaticamente para os usuários na área afetada, com informações sobre o tipo de risco, gravidade e ações recomendadas.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Os alertas são confiáveis?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Nossos alertas passam por um sistema de verificação em três etapas: análise automática por algoritmos de IA, cruzamento com dados oficiais e confirmação por nossa equipe de monitoramento. A taxa de precisão atual é de 98,7% para alertas de alto risco.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Como posso reportar um desastre?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Você pode reportar um desastre de três formas: 1) Pelo botão "Reportar Emergência" no mapa, 2) Enviando uma mensagem para nosso chatbot de emergência, ou 3) Ligando para o número de emergência local. Todos os relatos são verificados antes de gerarem alertas públicos.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>O sistema funciona offline?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Sim, as funcionalidades essenciais do AlertaDesastre estão disponíveis offline após o primeiro acesso. Mapas críticos, guias de sobrevivência e informações de contato de emergência são armazenados localmente no seu dispositivo.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Como são calculadas as rotas de evacuação?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Nossas rotas consideram: tipo de desastre, condições de tráfego em tempo real, capacidade dos abrigos, acessibilidade para pessoas com deficiência e pontos de risco intermediários. As rotas são atualizadas a cada 2 minutos durante emergências.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Viziinhança Alerta - Sistema de Proteção Comunitária</p>
+        <div class="footer-links">
+            <a href="/src/faq.html"><i class="fas fa-question-circle"></i> FAQ</a>
+            <a href="/src/contato.html"><i class="fas fa-phone-alt"></i> Contato</a>
+            <a href="#"><i class="fas fa-share-alt"></i> Compartilhe</a>
+        </div>
+    </footer>
+
+</body>
+</html>
