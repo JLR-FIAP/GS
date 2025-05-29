@@ -1,0 +1,300 @@
+.resources-hero {
+    background: linear-gradient(rgba(29, 53, 87, 0.8), rgba(29, 53, 87, 0.8));
+    height: 40vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.resources-hero .hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.resources-hero .hero-content p {
+    font-size: 1.2rem;
+}
+
+.emergency-contacts {
+    padding: 2rem;
+    background-color: #f8f9fa;
+}
+
+.emergency-contacts h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #1d3557;
+}
+
+.contacts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.contact-card {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+}
+
+.contact-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.contact-icon.police {
+    background-color: #3a86ff;
+}
+
+.contact-icon.fire {
+    background-color: #ff006e;
+}
+
+.contact-icon.medical {
+    background-color: #8338ec;
+}
+
+.contact-icon.civil-defense {
+    background-color: #fb5607;
+}
+
+.contact-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+    color: #1d3557;
+}
+
+.call-btn {
+    background-color: #1d3557;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    width: 100%;
+}
+
+.call-btn:hover {
+    background-color: #14213d;
+}
+
+.survival-guides {
+    padding: 2rem;
+}
+
+.survival-guides h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #1d3557;
+}
+
+.guide-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.tab-btn {
+    padding: 0.8rem 1.5rem;
+    background-color: #a8dadc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.tab-btn:hover {
+    background-color: #457b9d;
+    color: white;
+}
+
+.tab-btn.active {
+    background-color: #1d3557;
+    color: white;
+}
+
+.guide-content {
+    display: none;
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.guide-content.active {
+    display: block;
+}
+
+.guide-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.step {
+    display: flex;
+    gap: 1rem;
+}
+
+.step-number {
+    background-color: #1d3557;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-weight: bold;
+}
+
+.step-content h4 {
+    margin-bottom: 0.5rem;
+    color: #1d3557;
+}
+
+.emergency-kit {
+    padding: 2rem;
+    background-color: #f8f9fa;
+}
+
+.emergency-kit h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #1d3557;
+}
+
+.kit-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.kit-category {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.kit-category h3 {
+    color: #1d3557;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #a8dadc;
+}
+
+.kit-category ul {
+    list-style: none;
+}
+
+.kit-category li {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.kit-category i {
+    color: #1d3557;
+    margin-top: 0.2rem;
+}
+
+.training-resources {
+    padding: 2rem;
+}
+
+.training-resources h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #1d3557;
+}
+
+.training-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.training-card {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.training-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #1d3557;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    font-size: 1.5rem;
+}
+
+.training-card h3 {
+    color: #1d3557;
+    margin-bottom: 1rem;
+}
+
+.training-card p {
+    margin-bottom: 1.5rem;
+}
+
+.training-btn {
+    background-color: #1d3557;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.training-btn:hover {
+    background-color: #14213d;
+}
+
+@media (max-width: 768px) {
+    .resources-hero .hero-content h2 {
+        font-size: 2rem;
+    }
+    
+    .guide-steps {
+        grid-template-columns: 1fr;
+    }
+    
+    .kit-items {
+        grid-template-columns: 1fr;
+    }
+}
