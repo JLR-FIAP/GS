@@ -33,10 +33,10 @@ Imagine um morador de Petrópolis recebendo um alerta de chuva forte 1h antes do
 
 ## Tecnologia utilizada
 
-- HTML5
+- JS (Leaflet.js e OpenStreetMap)
+- HTML5 (Font Awesome)
 - CSS3
-- JS
-
+ 
 ## Estrutura de pastas
 
         /GS/
