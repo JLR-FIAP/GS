@@ -1,0 +1,135 @@
+.map-container {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    margin: 1rem;
+}
+
+#disasterMap {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 1;
+}
+
+.map-controls {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 1rem;
+}
+
+.map-filters {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+}
+
+.filter-group label {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.filter-group select {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.map-legend {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 1rem;
+}
+
+.legend-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.legend-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.legend-icon.flood {
+    background-color: #4361ee;
+}
+
+.legend-icon.fire {
+    background-color: #f72585;
+}
+
+.legend-icon.earthquake {
+    background-color: #7209b7;
+}
+
+.legend-icon.storm {
+    background-color: #4cc9f0;
+}
+
+.legend-icon.shelter {
+    background-color: #38b000;
+}
+
+.leaflet-marker-icon {
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+.marker-flood {
+    background-color: #4361ee;
+}
+
+.marker-fire {
+    background-color: #f72585;
+}
+
+.marker-earthquake {
+    background-color: #7209b7;
+}
+
+.marker-storm {
+    background-color: #4cc9f0;
+}
+
+.marker-shelter {
+    background-color: #38b000;
+}
+button {
+    margin: 10px;
+}
+@media (max-width: 768px) {
+    .map-filters {
+        flex-direction: column;
+    }
+    
+    .filter-group {
+        width: 100%;
+    }
+}
